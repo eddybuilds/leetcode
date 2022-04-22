@@ -1,3 +1,12 @@
+// http://cslibrary.stanford.edu/110/BinaryTrees.html
+
+export {
+  Node,
+  newNode,
+  insert,
+  lookup
+}
+
 class Node {
   constructor(data, left, right) {
     this.data = data;
@@ -43,7 +52,8 @@ function lookup(node, target) {
 }
 
 let root = new Node(9, new Node(4, null, null), new Node(11, null, null));
-console.log(root);
+
+// console.log(root);
 /*
 Node {
   data: 9,
@@ -51,7 +61,8 @@ Node {
   right: Node { data: 11, left: null, right: null }
 }
 */
-console.log(insert(root, 3));
+
+// console.log(insert(root, 3));
 /*
 Node {
   data: 9,
@@ -63,7 +74,8 @@ Node {
   right: Node { data: 11, left: null, right: null }
 }
 */
-console.log(lookup(root, 3));
+
+// console.log(lookup(root, 3));
 /*
 true
 */
